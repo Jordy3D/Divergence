@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    overflow: hidden;
+}
+
+/* if the page is shorter than 200px */
+@media (max-height: 450px) {
+    body {
+        align-items: flex-end;
+    }
+}
+
+
+#worldline {
+    font-family: 'Raleway', sans-serif;
+    font-size: 10vw;
+
+    display: flex;
+    gap: 1rem;
+
+    max-width: 100vw;
+}
+
+body {
+    background: #000;
+    color: #fff;
+}
+
+.tube {
+    min-width: 1em;
+    width: 1em;
+    height: 1.5em;
+
+    display: inline-block;
+    text-align: center;
+    line-height: 1.5em;
+
+    position: relative;
+
+    background: #fff1;
+
+    border: 1px solid #fff5;
+    border-radius: 0.25em 0.25em 0 0;
+
+    /* glowy inner box shadow */
+    box-shadow: inset 0 0 2vw #fff5, inset 0 0 4vw #ff6a0055;
+
+    animation: flicker-bulb 100ms infinite alternate;
+}
+
+@keyframes flicker-bulb {
+    0% {
+        box-shadow: inset 0 0 2vw #fff5, inset 0 0 4vw #ff6a0055;
+    }
+
+    100% {
+        box-shadow: inset 0 0 2vw #fff5, inset 0 0 5vw #ff6a0055;
+    }
+}
+
+.digit-lit {
+    /* make glowy orange text */
+    text-shadow: 0 0 10px #ff6a00, 0 0 20px #ff6a00, 0 0 40px #ff6a00;
+    ;
+
+    animation: flicker-text 0.1s infinite alternate;
+}
+
+@keyframes flicker-text {
+    0% {
+        text-shadow: 0 0 10px #ff6a00, 0 0 20px #ff6a00, 0 0 40px #ff6a00;
+    }
+
+    100% {
+        text-shadow: 0 0 10px #ff6a00, 0 0 20px #ff6a00, 0 0 50px #ff6a00;
+    }
+}
+
+
+
+.digit-unlit {
+    color: #fff1;
+
+    opacity: 0.2;
+
+    /* place it perfectly on top of the div */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    /* center the text */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-shadow: 0 0 5px #fff2, 0 0 10px #fff2;
+}
