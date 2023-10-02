@@ -1,5 +1,6 @@
-Got bored, have divergence.  
-![ezgif-5-0a8308626c](https://github.com/Jordy3D/Divergence/assets/19144524/c751f285-f949-4bb2-bcd8-4b9b221d2278)
+Got bored, [have divergence](https://jordy3d.github.io/Divergence/).  
+![ezgif-5-0a8308626c](https://github.com/Jordy3D/Divergence/assets/19144524/e51b7703-48af-4ad3-9c66-d8d8b6409e9c)
+
 
 The worldline is calculated the following way:
 1. Get current IP address
